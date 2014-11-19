@@ -304,6 +304,7 @@ div.info > ul > li {
 	/*background-color: red;*/
 	border-radius: 1000px;
 	position: absolute;
+	transition: width,height 0.7s,0.7s ease,ease 0.5s,0.5s;
 }
 
 #button:hover #extend {
