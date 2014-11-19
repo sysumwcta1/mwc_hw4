@@ -1,0 +1,338 @@
+/*general*/
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/atplus_white.png");
+	background-repeat: no-repeat;
+	/*margin: 500px auto 0px;*/
+	position: relative;
+	left: 48%;
+	top: 450px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background-position: center;
+	/*overflow: hidden;*/
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+#button:hover {
+	overflow: visible;
+}
+/*let all absolute under the button*/
+#button #info-bar,#control-ring-container {
+	position: absolute;
+}
+
+/*div.info > ul > li {
+	position: absolute;
+}
+
+#button:hover .info > ul > li {
+	position: relative;
+}*/
+
+#contriol-ring > li {
+	position: absolute;
+}
+
+div.info {
+	width: 36px;
+	height: 36px;
+	/* add for main.js */
+	line-height: 130px;
+	color: #00FF99;
+	font-size: 22pt;
+
+	background-color: gray;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	/*overflow: hidden;*/
+	position: relative;
+	text-align: center;
+	vertical-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+div.info > ul {
+	text-align: center;
+}
+
+div.info > ul > li {
+	position: relative;
+	list-style-type: none;
+}
+
+
+
+#control-ring > li {
+	position: absolute;
+}
+
+#control-ring {
+	list-style-type: none;
+}
+
+.mine.posted {
+	display: inline;
+}
+
+.mine.like {
+	display: inline;
+}
+
+.mask.button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/nomask.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+.history.button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/history.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+
+.message.button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/message.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+.setting.button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/setting.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+.sign.button {
+	width: 36px;
+	height: 36px;
+	background-color: gray;
+	background-image: url("assets/images/signin.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	opacity: 0;
+	transition: transform,width,height,opacity 0.7s,0.7s,0.7s,0.7s ease,ease,ease,ease 0.5s,0.5s,0.5s,0.5s;
+}
+
+#button:hover .info {
+	opacity: 1;
+	width: 130px;
+	height: 130px;
+	-moz-transform: translate(-25px, -140px);
+	-webkit-transform: translate(-25px, -140px);
+	transform: translate(-25, -140px);
+}
+
+#button:hover .mask.button {
+	opacity: 1;
+	-moz-transform: translate(-60px, -25px);
+	-webkit-transform: translate(-60px, -25px);
+	transform: translate(-60px, -25px);
+}
+
+#button:hover .history.button {
+	opacity: 1;
+	-moz-transform: translate(-80px, -30px);
+	-webkit-transform: translate(-80px, 30px);
+	transform: translate(-80px, 30px);
+}
+
+#button:hover .message.button {
+	opacity: 1;
+	-moz-transform: translate(-60px, 80px);
+	-webkit-transform: translate(-60px, 80px);
+	transform: translate(-60px, 80px);
+}
+
+#button:hover .setting.button {
+	opacity: 1;
+	-moz-transform: translate(-15px, 110px);
+	-webkit-transform: translate(-15px, 110px);
+	transform: translate(-15px, 110px);
+}
+
+#button:hover .sign.button {
+	opacity: 1;
+	-moz-transform: translate(-50px, 100px);
+	-webkit-transform: translate(50px, 100px);
+	transform: translate(50px, 100px);
+}
+
+#button:hover {
+	width: 80px;
+	height: 80px;
+	background-color: rgba(48, 63, 159, 1);
+	background-image: url("assets/images/atplus_green.png");
+	-moz-transform: translate(-25px, -25px);
+	-webkit-transform: translate(-25px, -25px);
+	transform: translate(-25px, -25px);
+}
+
+
+.page.user {
+	position: relative;
+	top: 10px;
+}
+
+.page.user > span {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 12pt;
+	color: white;
+	position: relative;
+	left: 6px;
+	top: -5px;
+}
+
+.page.comment {
+	position: relative;
+	top: 20px;
+}
+
+.page.comment > span {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 20pt;
+	color: white;
+	position: relative;
+	left: 10px;
+	top: -5px;
+}
+
+.mine.posted {
+	position: relative;
+	top: 20px;
+	right: 5px;
+}
+.mine.posted > span {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 12pt;
+	color: #00FFFF;
+	position: relative;
+	left: 5px;
+	top: -5px;
+}
+
+.mine.like {
+	position: relative;
+	top: 20px;
+	left: 5px;
+}
+
+.mine.like > span{
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 12pt;
+	color: #00FFFF;
+	position: relative;
+	left: 5px;
+	top: -5px;
+}
+
+.unread {
+	width: 15px;
+	height: 15px;
+	color: white;
+	font-size: 10pt;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: absolute;
+	right: 0px;
+	background-color: red;
+	display: none;
+}
+
+#extend {
+	width: 0px;
+	height: 0px;
+	opacity: 0px;
+	/*background-color: red;*/
+	border-radius: 1000px;
+	position: absolute;
+}
+
+#button:hover #extend {
+	width: 300px;
+	height: 300px;
+	opacity: 0px;
+	/*background-color: red;*/
+	transform: translate(-110px, -145px);
+}
+
+
+#sequence {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	display: none;
+	opacity: 0px;
+	border-radius: 1000px;
+	color: blue;
+	font-family: sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	line-height: 100px;
+}
+
+#button:hover #sequence {
+	width: 100px;
+	height: 100px;
+	opacity: 0px;
+	transform: translate(-15px, -210px);
+	/*background-color: red;*/
+}
