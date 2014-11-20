@@ -1,0 +1,1 @@
+此处的程序并未能真正呈现出并行的效果，而strengthen_version文件夹里的程序才能真正地呈现并行效果，可以根据strengthen_version文件夹里的readme.txt进行操作，里获得较好的并行效果~

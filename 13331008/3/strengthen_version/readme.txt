@@ -1,0 +1,1 @@
+如何使用strengthen_version文件夹里的程序:同时运行server1.js-server5.js这五个程序，并通过localhost:3000/index.html访问文件，即可获得真正的并行效果,若某些端口存在，可考虑替换程序里的端口号~

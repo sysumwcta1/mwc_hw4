@@ -1,0 +1,166 @@
+#part0 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+#image1 {
+	position: absolute;
+	top: 50px;
+	padding: 5px 2px 5px 2px;
+	width: 24px;
+	height: 18px;
+	border-radius: 18px;
+	background: radial-gradient(rgba(140, 141, 174, 0.9), rgba(140, 141, 174, 0.9));
+	transition: all 0.1s cubic-bezier(.1,.1,.1,8) 0s;
+}
+
+#part1 {
+    position: absolute;
+	left: -62px;
+	top: -12px;
+	border-radius: 75px;
+	width: 150px;
+	height: 150px;
+    transform: scale(0.1, 0.1);
+    transition: all 0.4s ease-out 0.1s;
+}
+
+#part2 {
+	position: absolute;
+	left: -62px;
+	top: -12px;
+	border-radius: 75px;
+	width: 150px;
+	height: 150px;
+}
+
+#image2 {
+	position: absolute;
+	left: 44px;
+	top: 48px;
+	padding: 14px 10px 14px 10px;
+	width: 38px;
+	height: 28px;
+	border-radius: 80px;
+	background: radial-gradient(rgba(48, 63, 159, 0.9), rgba(48, 63, 159, 1));
+	transform: scale(0.1, 0.1);
+	opacity: 0;
+	transition: transform 0.4s ease-out 0.1s, opacity 0.2s ease-out 0.1s;
+}
+
+#circle5 {
+	position: absolute;
+	left: 6.5px;
+	top: 9.5px;
+	padding: 20px 10px 20px 10px;
+	width: 110px;
+	height: 90px;
+	border-radius: 80px;
+	overflow: hidden;
+	color: rgb(33, 149, 126);
+	font: bold 60px Arial, Verdana, sans-serif;
+	text-align: center;
+	transform: scale(0.1, 0.1);
+	opacity: 0;
+	transition: transform 0.4s ease-out 0.25s, opacity 0.2s ease-out 0.25s;
+}
+
+#circle0, #circle1, #circle2, #circle3, #circle4 {
+	position: absolute;
+	top: 20px;
+	padding: 7px 9px 9px 7px;
+	width: 18px;
+	height: 18px;
+	border-radius: 40px;
+	text-align: center;
+	font: bold 20px Arial, Verdana, sans-serif;
+	color: rgb(33, 149, 126);
+	opacity: 0;
+	transition: transform 0.4s ease-out 0.25s, opacity 0.2s ease-out 0.25s;
+}
+#circle0 {
+	left: 56px;
+	top: 60px;
+}
+
+#circle1 {
+	left: 56px;
+	top: 60px;
+}
+
+#circle2 {
+	left: 56px;
+	top: 60px;
+}
+#circle3 {
+	left: 56px;
+	top: 60px;
+}
+#circle4 {
+	left: 56px;
+	top: 60px;
+}
+
+#part0:hover #part1 {
+	transform: scale(1, 1);
+}
+#part0:hover #image1 {
+    transform: scale(1.1, 1.1);
+}
+
+#part0:hover #image2 {
+	opacity: 1;
+    transform: scale(1, 1);
+}
+#part0:hover #circle5 {
+	opacity: 1;
+	transform: scale(1, 1);
+	transform: translateY(-99.5px);
+}
+#part0:hover #circle0 {
+	opacity: 1;
+	transform: translate(-48px, -30px);
+}
+#part0:hover #circle1 {
+	opacity: 1;
+	transform: translate(-56px, 5px);
+}
+#part0:hover #circle2 {
+	opacity: 1;
+	transform: translate(-38.5px, 40px);
+}
+#part0:hover #circle3 {
+	opacity: 1;
+	transform: translate(-1px, 55px);
+}
+#part0:hover #circle4 {
+	opacity: 1;
+	transform: translate(36px, 45px);
+}
+#text0, #text1, #text2, #text3, #text4 {
+	position: absolute;
+	left: 20px;
+	top: -3px;
+	width: 14px;
+	height: 14px;
+	padding: 0px 1.2px 2px 0px;
+	border-radius: 7px;
+    font-size: 13px;
+	background-color: red;
+	color: rgb(231, 206, 170);
+	text-align: center;
+	font-weight: 700;
+    font-family: Helvetica, Tahoma, Verdana;
+}
+.active {
+	background-color: rgb(33, 73, 158);
+}
+.inactive {
+	background-color: rgb(126, 126, 126);
+}
+
+#prompt {
+	text-align: center;
+	font: bold 25px Arial, Verdana, sans-serif;
+	color: #007989;
+}
