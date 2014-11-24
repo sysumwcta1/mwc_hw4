@@ -1,0 +1,9 @@
+*.sw*
+*~
+answer/bin/
+dist/
+**/node_modules/
+.temp/
+vendor/
+*.log
+.DS_Store
